@@ -7,14 +7,26 @@
     margin: 10px 50px 10px 0px;
 }
 
-.drink{
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    margin-bottom: 80px;
-}
 img{
     width: 600px;
     height: 500px;
+}
+
+.drink{
+    text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color:#193858;
+  margin: 40px 0 30px;
+  position: relative;
+}
+
+.drink::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #3498db, #1abc9c);
+  margin: 15px auto 0;
+  border-radius: 3px;
 }
